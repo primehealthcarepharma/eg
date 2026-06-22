@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Prime Health Care Pharma</title>
+  <link rel="icon" href="assets/icons/logo.jpeg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body data-page="products">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#hero" class="brand">
+        <img src="assets/icons/logo.jpeg" alt="Prime Health Care Pharma logo" class="brand-logo" />
+        <span>Prime Health Care Pharma</span>
+      </a>
+      <nav class="site-nav" id="navbar">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products" id="products" data-aos="fade-up">
+      <div class="container section-heading">
+        <span>All Products</span>
+        <h2>Search and browse our full product catalog.</h2>
+        <div class="product-search">
+          <input type="search" id="productSearch" placeholder="Search products" aria-label="Search products" />
+        </div>
+      </div>
+      <div class="container product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <!-- reuse footer from index.html -->
+  <footer class="site-footer" role="contentinfo" data-aos="fade-up">
+    <div class="container footer-top">
+      <div class="footer-col footer-brand" aria-labelledby="footer-brand">
+        <a id="footer-brand" class="brand" href="index.html#hero">
+          <img src="assets/icons/logo.jpeg" alt="Prime Health Care Pharma logo" class="brand-logo" />
+          <div class="brand-text">
+            <strong>Prime Health Care Pharma</strong>
+            <div class="tagline">Your Trusted Partner in Healthcare Excellence</div>
+          </div>
+        </a>
+        <p class="brand-desc">Prime Health Care Pharma provides high-quality pharmaceuticals, trusted distribution, and dedicated support to healthcare providers and communities across Egypt.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick Links">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#team">Leadership Team</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#news">News &amp; Updates</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Help and Support">
+        <h4>Help &amp; Support</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="index.html#branches">Branch Locations</a></li>
+          <li><a href="tel:+201000000000">Phone Numbers</a></li>
+          <li><a href="mailto:info@primehealthcarepharma.com">Email Address</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-social" aria-label="Stay Connected">
+        <h4>Stay Connected</h4>
+        <div class="social-list" role="list">
+          <a class="social-btn facebook" href="#" aria-label="Facebook" role="listitem" rel="noreferrer">
+            <img class="social-img" src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" />
+          </a>
+          <a class="social-btn instagram" href="#" aria-label="Instagram" role="listitem" rel="noreferrer">
+            <img class="social-img" src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" />
+          </a>
+          <a class="social-btn whatsapp" href="https://wa.me/201000000000" aria-label="WhatsApp" role="listitem" rel="noreferrer">
+            <img class="social-img" src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="WhatsApp" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">© 2026 Prime Health Care Pharma. All rights reserved.</div>
+      <div class="footer-meta">
+        <div class="country">
+          <svg class="flag" width="24" height="16" viewBox="0 0 3 2" aria-hidden="true" focusable="false">
+            <rect width="3" height="0.6667" y="0" fill="#CE1126" />
+            <rect width="3" height="0.6667" y="0.6667" fill="#FFFFFF" />
+            <rect width="3" height="0.6667" y="1.3333" fill="#000000" />
+          </svg>
+          <span class="country-text">Egypt - Cairo</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function(){
+      const btn = document.getElementById('scrollTopBtn');
+      if(!btn) return;
+      const showOn = 320;
+      function onScroll(){
+        if(window.scrollY > showOn) btn.classList.remove('hidden'); else btn.classList.add('hidden');
+      }
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+      btn.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+      // smooth internal anchor links in footer
+      document.querySelectorAll('.footer-links a, a.brand').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const href = this.getAttribute('href');
+          if(href && href.startsWith('#')){
+            e.preventDefault();
+            const el = document.querySelector(href);
+            if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+            history.replaceState(null, '', href);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

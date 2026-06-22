@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://primehealthcarepharma.example.com/sitemap.xml
