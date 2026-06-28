@@ -30,7 +30,7 @@ body {
   padding: 6rem 0 5rem;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(rgba(10, 20, 40, 0.55), rgba(10, 20, 40, 0.2)), url('https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1400&q=80');
+  background-image: linear-gradient(rgba(10, 20, 40, 0.55), rgba(10, 20, 40, 0.2)), var(--hero-bg-image, url('https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1400&q=80'));
   background-size: cover;
   background-position: center;
   color: #fff;

@@ -150,6 +150,15 @@
 .brand-logo {
   width: 38px;
   height: 38px;
+  border-radius: 8px;
+  transition: box-shadow 0.25s ease;
+}
+
+/* In dark mode the JPEG logo has a white bg — give it a deliberate badge look */
+[data-theme="dark"] .brand-logo {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 2px;
 }
 
 .site-nav ul {
@@ -168,6 +177,27 @@
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--primary-blue);
+}
+
+/* Active section indicator (scrollspy) */
+.site-nav a.active {
+  color: var(--primary-green);
+  font-weight: 700;
+}
+
+.site-nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-green);
+  border-radius: 999px;
+}
+
+.site-nav a {
+  position: relative;
 }
 
 .site-header {
@@ -357,6 +387,20 @@
   padding: 1rem;
   background: var(--background);
   color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(20, 60, 132, 0.12);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(139, 197, 63, 0.15);
 }
 
 .form-response {
@@ -516,7 +560,26 @@
 .footer-meta { display:flex; align-items:center; gap:1rem; }
 .country { display:flex; align-items:center; gap:0.5rem; }
 .country-text { font-weight:700; color:var(--primary-blue); }
-.flag { border-radius:2px; overflow:hidden; }
+.flag { font-size: 1.3rem; line-height: 1; }
+
+.category-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  background: rgba(20, 60, 132, 0.08);
+  border: 1px solid rgba(20, 60, 132, 0.18);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+[data-theme="dark"] .category-tag {
+  color: var(--primary-green);
+  background: rgba(139, 197, 63, 0.1);
+  border-color: rgba(139, 197, 63, 0.2);
+}
 
 /* Back to top / scroll button */
 #scrollTopBtn {
@@ -594,13 +657,3 @@
   transform: translateY(-1px) scale(1.03);
 }
 
-.footer-grid {
-  display: grid;
-  gap: 2rem;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 2rem 0;
-  color: var(--muted);
-}

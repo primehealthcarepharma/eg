@@ -88,66 +88,10 @@ const leadership = [
   }
 ];
 
-const branches = [
-  {
-    name: "Cairo Branch",
-    address: "123 Nile Avenue, Cairo, Egypt",
-    phone: "+20 100 123 4567",
-    map: "https://maps.google.com?q=Cairo+Egypt"
-  },
-  {
-    name: "Alexandria Branch",
-    address: "88 Corniche Road, Alexandria, Egypt",
-    phone: "+20 102 765 4321",
-    map: "https://maps.google.com?q=Alexandria+Egypt"
-  },
-  {
-    name: "Giza Branch",
-    address: "45 Pyramids Street, Giza, Egypt",
-    phone: "+20 100 987 6543",
-    map: "https://maps.google.com?q=Giza+Egypt"
-  }
-];
+// Branch data moved to js/site-config.js → SITE_CONFIG.branches
 
-const testimonials = [
-  {
-    author: "Dr. Sara Khaled",
-    role: "Hospital Pharmacist",
-    review: "Prime Health Care Pharma delivers reliable products and fast distribution. Their team is responsive and professional."
-  },
-  {
-    author: "Ahmed Youssef",
-    role: "Clinic Manager",
-    review: "The service quality is excellent, and product support helps our practice stay equipped with the best supplies."
-  },
-  {
-    author: "Laila Hassan",
-    role: "Medical Center Director",
-    review: "The dependable logistics and certified product range have made them a key partner for our facility."
-  },
-  {
-    author: "Mohamed Samir",
-    role: "Pharmacy Owner",
-    review: "Quality assurance is clear in every shipment, and the customer service is always helpful."
-  },
-  {
-    author: "Nadine Adel",
-    role: "Healthcare Consultant",
-    review: "I recommend Prime Health Care Pharma for trusted pharmaceuticals and regulatory support." 
-  }
-];
-
-const faqs = [
-  {
-    question: "How can I place an order?",
-    answer: "Contact our sales team through the contact form or WhatsApp link for a quick response."
-  },
-  {
-    question: "What certifications do you hold?",
-    answer: "We maintain ISO, GMP, and regulatory compliance standards across our product offerings."
-  },
-  {
-    question: "Do you provide delivery support?",
-    answer: "Yes, we provide nationwide distribution and logistics support for all orders." 
-  }
-];
+/*
+ * Products array — edit product names, descriptions, categories, and images here.
+ * Image paths: use "assets/images/products/your-image.jpg" for local files.
+ * See js/site-config.js for FAQ, categories, partners, and all other text content.
+ */

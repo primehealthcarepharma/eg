@@ -41,7 +41,7 @@ const buildLeaderContent = (leader) => {
           </div>
           <div class="leader-detail-actions">
             <a href="index.html#team" class="btn btn-outline">Back to Leadership</a>
-            <a href="#contact" class="btn btn-primary">Contact ${leader.name}</a>
+            <a href="index.html#contact" class="btn btn-primary">Contact ${leader.name}</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const initThemeToggle = () => {
   const storedTheme = localStorage.getItem('theme');
   const setTheme = (theme) => {
     document.documentElement.dataset.theme = theme;
-    themeToggle.innerHTML = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    themeToggle.textContent = theme === 'dark' ? 'Light' : 'Dark';
   };
 
   if (storedTheme) {
