@@ -30,6 +30,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,8 @@ body {
   background: var(--background);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 img {
