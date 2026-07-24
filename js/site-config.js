@@ -55,12 +55,13 @@ const SITE_CONFIG = {
    *  These appear in the contact section, footer, and schema.
    * ---------------------------------------------------------- */
   contact: {
-    phone: '+20 100 000 0000',          // displayed phone number
-    phoneHref: '+201000000000',          // href for tel: links (no spaces/dashes)
+    phone: '+20 127 384 3111',          // displayed phone number
+    phoneHref: '+201273843111',          // href for tel: links (no spaces/dashes)
     email: 'info@primehealthcarepharma.com',
     address: 'Mansoura, Egypt',
-    // Replace with your real WhatsApp number: "https://wa.me/201XXXXXXXXX"
-    whatsapp: 'https://wa.me/201000000000',
+    // Second contact number — shown alongside the main phone and links to WhatsApp chat
+    whatsappPhone: '+20 105 567 1722',
+    whatsapp: 'https://wa.me/201055671722',
   },
 
   /* ----------------------------------------------------------
@@ -187,7 +188,7 @@ const SITE_CONFIG = {
   branches: [
     {
       name: 'Mansoura Branch',
-      address: 'شارع مجمع المحاكم المنصورة',
+      address: 'Mansoura, Egypt',
       phone: '+20 105 567 1722',
       map: 'https://maps.google.com?q=31.032958,31.398806',
     },

@@ -52,7 +52,7 @@ const renderBranches = () => {
     <article class="branch-card" data-aos="fade-up">
       <h3>${b.name}</h3>
       <p>${b.address}</p>
-      <p>Phone: <a href="tel:${b.phone}">${b.phone}</a></p>
+      <p>Phone: <a href="tel:${b.phone.replace(/\s/g, '')}">${b.phone}</a></p>
       <p><a href="${b.map}" target="_blank" rel="noreferrer">View on Google Maps</a></p>
     </article>
   `).join('');
@@ -165,6 +165,7 @@ const applyContactInfo = () => {
     infoCard.innerHTML = `
       <h3>Contact Information</h3>
       <p>Phone: <a href="tel:${contact.phoneHref}">${contact.phone}</a></p>
+      <p>WhatsApp: <a href="${contact.whatsapp}" target="_blank" rel="noreferrer">${contact.whatsappPhone}</a></p>
       <p>Email: <a href="mailto:${contact.email}">${contact.email}</a></p>
       <p>Address: ${contact.address}</p>
     `;

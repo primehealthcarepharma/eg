@@ -22,10 +22,8 @@ const renderFooter = () => {
           <img src="${company.logoPath}" alt="${company.name} logo" class="brand-logo" />
           <div class="brand-text">
             <strong>${company.name}</strong>
-            <div class="tagline">${company.tagline}</div>
           </div>
         </a>
-        <p class="brand-desc">${company.description}</p>
       </div>
 
       <nav class="footer-col" aria-label="Quick Links">
@@ -43,7 +41,7 @@ const renderFooter = () => {
         <ul class="footer-links">
           <li><a href="${a('#contact')}">Contact Us</a></li>
           <li><a href="${a('#branches')}">Branch Locations</a></li>
-          <li><a href="tel:${contact.phoneHref}">${contact.phone}</a></li>
+          <li><a href="tel:${contact.whatsappPhone.replace(/\s/g, '')}">${contact.whatsappPhone}</a></li>
           <li><a href="mailto:${contact.email}">${contact.email}</a></li>
         </ul>
       </nav>
