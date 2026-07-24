@@ -33,7 +33,7 @@ body {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(10, 20, 40, 0.18), rgba(10, 20, 40, 0.08)), url('../assets/images/background-image.png') center center/cover no-repeat;
+  background: linear-gradient(rgba(10, 20, 40, 0.18), rgba(10, 20, 40, 0.08)), url('../assets/images/background-image.jpg') center center/cover no-repeat;
   background-color: #0b1625;
   color: #fff;
 }
@@ -437,6 +437,8 @@ body {
   }
   .hero {
     padding: 3rem 0 2rem;
+    min-height: 70vh;
+    background-position: 25% center;
   }
   .hero h1 {
     font-size: 2.5rem;

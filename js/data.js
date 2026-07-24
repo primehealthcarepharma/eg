@@ -4,7 +4,7 @@ const products = [
     name: "PrimeCare Tablets",
     description: "Fast-acting tablets for everyday wellness and symptom relief.",
     category: "Tablets",
-    image: "assets/images/background-image.png"
+    image: "assets/images/background-image.jpg"
   },
   {
     id: 2,

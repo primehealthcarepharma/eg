@@ -45,9 +45,9 @@ const SITE_CONFIG = {
     name: 'Prime Health Care Pharma',
     tagline: 'Your Trusted Partner in Healthcare Excellence',
     description: 'Prime Health Care Pharma provides high-quality pharmaceuticals, trusted distribution, and dedicated support to healthcare providers and communities across Egypt.',
-    // Path to logo shown in header and footer
+    // Path to logo shown in header and footer (square icon mark)
     // Replace with: "assets/icons/your-logo.png"
-    logoPath: 'assets/icons/logo.png',
+    logoPath: 'assets/icons/logo-icon-128.png',
   },
 
   /* ----------------------------------------------------------
@@ -82,7 +82,7 @@ const SITE_CONFIG = {
 
     // Hero section CSS background image (the full-width backdrop)
     // Replace with your own: "assets/images/hero-bg.jpg"
-    backgroundImage: 'assets/images/background-image.png',
+    backgroundImage: 'assets/images/background-image.jpg',
 
     // Hero right-side photo (visible on desktop)
     // No right-side image on homepage, so leave blank or remove this path.

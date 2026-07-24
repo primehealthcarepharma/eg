@@ -150,6 +150,7 @@
 .brand-logo {
   width: 48px;
   height: 48px;
+  object-fit: cover;
   border-radius: 10px;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
