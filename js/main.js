@@ -1,9 +1,6 @@
 const productGrid      = document.getElementById('productGrid');
-const teamGrid         = document.getElementById('teamGrid');
 const branchGrid       = document.getElementById('branchGrid');
-const faqGrid          = document.getElementById('faqGrid');
 const categoriesGrid   = document.getElementById('categoriesGrid');
-const partnerGrid      = document.getElementById('partnerGrid');
 const servicesGrid     = document.getElementById('servicesGrid');
 const whyGrid          = document.getElementById('whyGrid');
 const aboutGrid        = document.getElementById('aboutGrid');
@@ -108,30 +105,11 @@ const renderWhyUs = () => {
   `).join('');
 };
 
-/* ── FAQ (from SITE_CONFIG) ────────────────────────────────── */
-const renderFaq = () => {
-  if (!faqGrid || !SITE_CONFIG) return;
-  faqGrid.innerHTML = SITE_CONFIG.faq.map((item, i) => `
-    <article class="faq-item" data-aos="fade-up" data-aos-delay="${i * 100}">
-      <h3>${item.q}</h3>
-      <p>${item.a}</p>
-    </article>
-  `).join('');
-};
-
 /* ── Categories (from SITE_CONFIG) ─────────────────────────── */
 const renderCategories = () => {
   if (!categoriesGrid || !SITE_CONFIG) return;
   categoriesGrid.innerHTML = SITE_CONFIG.categories.map((cat) => `
     <div class="category-card">${cat}</div>
-  `).join('');
-};
-
-/* ── Partners (from SITE_CONFIG) ───────────────────────────── */
-const renderPartners = () => {
-  if (!partnerGrid || !SITE_CONFIG) return;
-  partnerGrid.innerHTML = SITE_CONFIG.partners.map((p) => `
-    <div class="partner-card">${p}</div>
   `).join('');
 };
 
@@ -292,15 +270,12 @@ window.addEventListener('DOMContentLoaded', () => {
     renderProducts(products);
   } else {
     renderProducts(products, 4); // 1 row of 4 on homepage
-    renderTeam();
     renderBranches();
     renderAbout();
     renderMission();
     renderServices();
     renderWhyUs();
-    renderFaq();
     renderCategories();
-    renderPartners();
   }
 
   initThemeToggle();

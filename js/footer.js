@@ -32,7 +32,6 @@ const renderFooter = () => {
         <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="${a('#about')}">About Us</a></li>
-          <li><a href="${a('#team')}">Leadership Team</a></li>
           <li><a href="${a('#products')}">Products</a></li>
           <li><a href="${a('#services')}">Services</a></li>
           <li><a href="${a('#contact')}">Contact Us</a></li>
@@ -46,7 +45,6 @@ const renderFooter = () => {
           <li><a href="${a('#branches')}">Branch Locations</a></li>
           <li><a href="tel:${contact.phoneHref}">${contact.phone}</a></li>
           <li><a href="mailto:${contact.email}">${contact.email}</a></li>
-          <li><a href="${a('#faq')}">FAQ</a></li>
         </ul>
       </nav>
 

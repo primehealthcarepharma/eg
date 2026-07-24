@@ -148,10 +148,14 @@
 }
 
 .brand-logo {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  transition: box-shadow 0.25s ease;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
 }
 
 /* In dark mode the JPEG logo has a white bg — give it a deliberate badge look */
@@ -316,6 +320,18 @@
 .partner-card h3,
 .contact-card h3 {
   margin-top: 0;
+}
+
+.branch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.branch-card a {
+  margin-top: 1rem;
 }
 
 .hero-actions {

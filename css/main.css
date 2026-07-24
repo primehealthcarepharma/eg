@@ -27,12 +27,14 @@ body {
 }
 
 .hero {
-  padding: 6rem 0 5rem;
+  padding: 8rem 0 7rem;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(rgba(10, 20, 40, 0.55), rgba(10, 20, 40, 0.2)), var(--hero-bg-image, url('https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1400&q=80'));
-  background-size: cover;
-  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(10, 20, 40, 0.18), rgba(10, 20, 40, 0.08)), url('../assets/images/background-image.png') center center/cover no-repeat;
+  background-color: #0b1625;
   color: #fff;
 }
 
@@ -55,7 +57,7 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 1fr);
+  grid-template-columns: 1fr;
   gap: 3rem;
   align-items: center;
 }

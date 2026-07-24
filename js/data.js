@@ -4,7 +4,7 @@ const products = [
     name: "PrimeCare Tablets",
     description: "Fast-acting tablets for everyday wellness and symptom relief.",
     category: "Tablets",
-    image: "https://images.unsplash.com/photo-1580281657677-2df33bcd4956?auto=format&fit=crop&w=500&q=80"
+    image: "assets/images/background-image.png"
   },
   {
     id: 2,
@@ -54,37 +54,6 @@ const products = [
     description: "Capsules that support immune function and daily health balance.",
     category: "Capsules",
     image: "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=500&q=80"
-  }
-];
-
-const leadership = [
-  {
-    slug: "Sama Gamal",
-    name: "Sama Gamal",
-    position: "Chairman",
-    bio: "Provides strategic guidance across the organization to ensure excellence and integrity.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=450&q=80"
-  },
-  {
-    slug: "nour-el-sayed",
-    name: "Nour El-Sayed",
-    position: "CEO",
-    bio: "Leads company operations and innovation to deliver trusted pharmaceutical solutions.",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=450&q=80"
-  },
-  {
-    slug: "mona-abdelrahman",
-    name: "Mona Abdelrahman",
-    position: "Managing Director",
-    bio: "Drives business performance with a focus on quality, compliance, and partner success.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=450&q=80"
-  },
-  {
-    slug: "karim-hassan",
-    name: "Karim Hassan",
-    position: "Operations Director",
-    bio: "Oversees logistics and supply chain operations for reliable product delivery.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=450&q=80"
   }
 ];
 

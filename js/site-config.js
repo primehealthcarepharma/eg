@@ -47,7 +47,7 @@ const SITE_CONFIG = {
     description: 'Prime Health Care Pharma provides high-quality pharmaceuticals, trusted distribution, and dedicated support to healthcare providers and communities across Egypt.',
     // Path to logo shown in header and footer
     // Replace with: "assets/icons/your-logo.png"
-    logoPath: 'assets/icons/logo.jpeg',
+    logoPath: 'assets/icons/logo.png',
   },
 
   /* ----------------------------------------------------------
@@ -58,7 +58,7 @@ const SITE_CONFIG = {
     phone: '+20 100 000 0000',          // displayed phone number
     phoneHref: '+201000000000',          // href for tel: links (no spaces/dashes)
     email: 'info@primehealthcarepharma.com',
-    address: 'Cairo, Egypt',
+    address: 'Mansoura, Egypt',
     // Replace with your real WhatsApp number: "https://wa.me/201XXXXXXXXX"
     whatsapp: 'https://wa.me/201000000000',
   },
@@ -77,18 +77,17 @@ const SITE_CONFIG = {
    *  HERO SECTION
    * ---------------------------------------------------------- */
   hero: {
-    eyebrow: 'Healthcare that cares',
     heading: 'Trusted Healthcare Solutions For Better Lives',
     subtext: 'Prime Health Care Pharma delivers quality pharmaceutical products, nationwide distribution, and regulated healthcare support to communities across Egypt.',
 
     // Hero section CSS background image (the full-width backdrop)
     // Replace with your own: "assets/images/hero-bg.jpg"
-    backgroundImage: 'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1400&q=80',
+    backgroundImage: 'assets/images/background-image.png',
 
     // Hero right-side photo (visible on desktop)
-    // Replace with your own: "assets/images/hero-photo.jpg"
-    heroImage: 'https://images.unsplash.com/photo-1580281657521-8dee1fbbd8fd?auto=format&fit=crop&w=900&q=80',
-    heroImageAlt: 'Healthcare professionals collaborating in a modern pharmaceutical environment',
+    // No right-side image on homepage, so leave blank or remove this path.
+    heroImage: '',
+    heroImageAlt: '',
 
     ctaPrimary: { label: 'Explore Products', href: '#products' },
     ctaSecondary: { label: 'Contact Us', href: '#contact' },
@@ -178,31 +177,7 @@ const SITE_CONFIG = {
   /* ----------------------------------------------------------
    *  PRODUCT CATEGORIES (shown in the categories section)
    * ---------------------------------------------------------- */
-  categories: ['Tablets', 'Capsules', 'Syrups', 'Medical Devices', 'Supplements', 'Personal Care'],
-
-  /* ----------------------------------------------------------
-   *  PARTNERS (logos/names shown in the partners section)
-   *  Replace with real partner names or add image paths.
-   * ---------------------------------------------------------- */
-  partners: ['Healthcare Partners', 'Hospitals', 'Pharmacies', 'Medical Centers'],
-
-  /* ----------------------------------------------------------
-   *  FAQ
-   * ---------------------------------------------------------- */
-  faq: [
-    {
-      q: 'Do you offer nationwide shipping?',
-      a: 'Yes, our distribution network reaches major cities and healthcare providers throughout the country.',
-    },
-    {
-      q: 'Can you support hospital supply orders?',
-      a: 'We provide wholesale supply solutions for hospitals, pharmacies, and clinics.',
-    },
-    {
-      q: 'How do you ensure product quality?',
-      a: 'Quality assurance is maintained with certified suppliers and regulatory-compliant processes.',
-    },
-  ],
+  categories: ['Tablets', 'Capsules', 'Syrups', 'Supplements', 'Personal Care'],
 
   /* ----------------------------------------------------------
    *  BRANCH LOCATIONS
@@ -211,22 +186,10 @@ const SITE_CONFIG = {
    * ---------------------------------------------------------- */
   branches: [
     {
-      name: 'Cairo Branch',
-      address: '123 Nile Avenue, Cairo, Egypt',
-      phone: '+20 100 123 4567',
-      map: 'https://maps.google.com?q=Cairo+Egypt',
-    },
-    {
-      name: 'Alexandria Branch',
-      address: '88 Corniche Road, Alexandria, Egypt',
-      phone: '+20 102 765 4321',
-      map: 'https://maps.google.com?q=Alexandria+Egypt',
-    },
-    {
-      name: 'Giza Branch',
-      address: '45 Pyramids Street, Giza, Egypt',
-      phone: '+20 100 987 6543',
-      map: 'https://maps.google.com?q=Giza+Egypt',
+      name: 'Mansoura Branch',
+      address: 'شارع مجمع المحاكم المنصورة',
+      phone: '+20 105 567 1722',
+      map: 'https://maps.google.com?q=31.032958,31.398806',
     },
   ],
 
