@@ -53,6 +53,7 @@ const renderBranches = () => {
       <h3>${b.name}</h3>
       <p>${b.address}</p>
       <p>Phone: <a href="tel:${b.phone.replace(/\s/g, '')}">${b.phone}</a></p>
+      ${b.phone2 ? `<p>Phone: <a href="tel:${b.phone2.replace(/\s/g, '')}">${b.phone2}</a></p>` : ''}
       <p><a href="${b.map}" target="_blank" rel="noreferrer">View on Google Maps</a></p>
     </article>
   `).join('');

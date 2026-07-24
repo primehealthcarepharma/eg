@@ -190,6 +190,7 @@ const SITE_CONFIG = {
       name: 'Mansoura Branch',
       address: 'Mansoura, Egypt',
       phone: '+20 105 567 1722',
+      phone2: '+20 127 384 3111',
       map: 'https://maps.google.com?q=31.032958,31.398806',
     },
   ],
